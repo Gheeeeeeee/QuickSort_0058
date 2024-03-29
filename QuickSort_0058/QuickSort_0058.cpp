@@ -60,31 +60,30 @@ void q_short(int low, int high)
 	while (i <= j) // step 10
 	{
 		//mencari untuk element yang lebih besar dari pada variabel pivot
-	}	while ((arr[i] <= pivot) && (i <= high)) /// step 5
-	{
-		i++;//step 6
+		while ((arr[i] <= pivot) && (i <= high)) /// step 5
+		{
+			i++;//step 6
+			cmp_count++;
+		}
 		cmp_count++;
-	}
-	cmp_count++;
-	//mencari element yang lebih kecil atau sama dengan pivot
-	while ((arr[j] > pivot) && (j >= low)) //step7
-	{
-		j--;//step 8
+		//mencari element yang lebih kecil atau sama dengan pivot
+		while ((arr[j] > pivot) && (j >= low)) //step7
+		{
+			j--;//step 8
+			cmp_count++;
+		}
 		cmp_count++;
+		if (i < j) // step 9
+		{
+			//swap the element at index i dengan index j
+			swap(i, j);
+		}
+		if (low < j) {//step 11
+			//swap pivot element dengan element index j
+			swap(low, j);
+		}
 	}
-	cmp_count++;
-	if (i < j) // step 9
-	{
-		//swap the element at index i dengan index j
-		swap(i, j);
-	}
-	if (low < j) {//step 11
-		//swap pivot element dengan element index j
-		swap(low, j);
-}
-
-
-}
+}	
 
 int main()
 {
