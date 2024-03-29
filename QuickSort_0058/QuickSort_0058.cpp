@@ -61,6 +61,7 @@ void q_short(int low, int high)
 	{
 		//mencari untuk element yang lebih besar dari pada variabel pivot
 	}	while ((arr[i] <= pivot) &&) (i <= high)) /// step 5
+
 }
 
 int main()
