@@ -16,7 +16,7 @@ void input() {
 		cin >> n;
 
 		if (n <= 20)
-		break;
+			break;
 		else
 			cout << "\nMaksimum panjang array adalah 20" << endl;
 
@@ -31,7 +31,7 @@ void input() {
 		cout << "<" << (i + 1) << ">";
 		cin >> arr[i];
 	}
-}	
+}
 //swaps the element at index x with the element at index y
 void swap(int x, int y)
 {
@@ -60,7 +60,10 @@ void q_short(int low, int high)
 	while (i <= j) // step 10
 	{
 		//mencari untuk element yang lebih besar dari pada variabel pivot
-	}	while ((arr[i] <= pivot) &&) (i <= high)) /// step 5
+	}	while ((arr[i] <= pivot) && (i <= high)) /// step 5
+	{
+		i++;//step 6
+	}
 
 }
 
