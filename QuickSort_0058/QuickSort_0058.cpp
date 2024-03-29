@@ -57,6 +57,7 @@ void q_short(int low, int high)
 	j = high; //step 4
 
 
+	while (i <= j) // step 5
 }
 
 int main()
